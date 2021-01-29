@@ -1,0 +1,158 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background: #faeded;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background: #ece1e1;
+  height: 50px;
+  display: flex;
+  position: sticky;
+  top: 0px;
+}
+
+.header__name {
+  margin-top: -5px;
+  font-size: 12px;
+  flex-grow: 1;
+  padding-left: 10px;
+}
+
+.header__a {
+  flex-grow: 1;
+  margin: auto 0;
+  text-align: center;
+}
+
+.header__a img {
+  height: 25px;
+  width: 30px;
+  margin-left: 20px;
+}
+
+.header__a a {
+  text-decoration: none;
+}
+
+
+.about-me {
+  padding: 0 20%;
+  text-align: center;
+  font-size: 12px;
+}
+
+.about-me p {
+  font-size: 15px;
+}
+
+
+.projects-header {
+  font-size: 20px;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
+.projects {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 10%;
+  overflow: hidden;
+}
+
+.project {
+  flex: 1;
+  margin: 0 10px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  padding: 0 10px;
+  background: #d3c9c9;
+}
+
+
+@media only screen and (min-width: 430px) {
+  .projects {
+    padding: 0 5%;
+    justify-content: center;
+  }
+
+  .project {
+    flex: 0;
+    min-width: 180px;
+    text-align: left;
+  }
+}
+
+
+@media only screen and (min-width: 650px) {
+  .header__a img {
+    margin-left: 50px;
+    width: 40px;
+    margin-top: 5px;
+  }
+
+  .header__name {
+    font-size: 15px;
+    margin-top: -10px;
+  }
+
+  .about-me {
+    font-size: 15px;
+  }
+  
+  .about-me p {
+    font-size: 18px;
+  }
+
+  .projects-header {
+    font-size: 25px;
+  }
+
+  .project {
+    font-size: 18px;
+    min-width: 300px;
+  }
+
+  .project h1 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .header {
+    padding: 5px 5%;
+  }
+
+  .header__name {
+    font-size: 18px;
+    margin-top: -20px;
+  }
+
+  .header__a img {
+    height: 40px;
+    width: 50px;
+  }
+
+  .about-me {
+    padding: 0 30%;
+    font-size: 18px;
+  }
+
+  .about-me p {
+    font-size: 20px;
+  }
+
+  .projects-header {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+
+  .project {
+    min-width: 0;
+    flex: 1;
+  }
+}
