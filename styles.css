@@ -73,6 +73,10 @@ html, body {
   background: #d3c9c9;
 }
 
+.project:hover {
+  box-shadow: 5px 10px #a79797;;
+}
+
 .project a {
   text-decoration: none;
   color: inherit;
