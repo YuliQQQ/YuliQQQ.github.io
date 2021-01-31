@@ -73,6 +73,11 @@ html, body {
   background: #d3c9c9;
 }
 
+.project a {
+  text-decoration: none;
+  color: inherit;
+}
+
 
 @media only screen and (min-width: 430px) {
   .projects {
